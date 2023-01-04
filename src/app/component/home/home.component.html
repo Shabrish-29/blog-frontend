@@ -1,0 +1,32 @@
+<div class="container mt-3">
+    <h2>Tech Related Blogs</h2>
+    <div class="mt-4 p-5 bg-primary text-white rounded" style="
+    background-image: url('assets/Blog-background-8.png');
+    height: 460px;height:260px;
+    ">
+      <h1>Tech Blog</h1> 
+      <p>Technical blog writing is a form of content writing which is more focused on engaging the audience with articles of high quality and getting more traffic to the websites. Technical bloggers write on topics with fine details of technical operations and focus on what the audience is interested in technology.</p> 
+    </div>
+  </div>
+<br/>
+<div class="container">
+    
+<div class="row">    
+
+
+  <div class="card" style="width: 20rem;" *ngFor="let post of posts">
+    <img class="card-img-top" src="data:image/png;base64,{{post.postImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title">{{post.postTitle}}</h6>
+     <p class="content">{{post.postContent | slice : 0 :50 }}...</p>
+      <a href="/post/{{post.postId}}" class="btn btn-primary btn-sm ">Read More</a>
+    </div>
+    
+  </div>
+
+  
+  
+ 
+</div>
+</div>
+<br/>
